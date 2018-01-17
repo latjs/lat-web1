@@ -9,19 +9,65 @@
 		<!--描述:header nav-->
 		<div id="nav">
 			<div class="navone">
-				<a href="#">登录/注册</a><img src="img/ind01.jpg" alt="" />
-				<a href="#">在线客服</a><img src="img/indright.jpg" alt="" />
-				<a href="#">帮助中心</a><img src="img/indright.jpg" alt="" />
-				<a href="#">购物车</a>
+				<ul>
+					<li><a href="#">登录/注册</a><img src="img/indright.jpg" alt="" /></li>
+					<li><a href="#">在线客服</a><img src="img/indright.jpg" alt="" /></li>
+					<li><a href="#">帮助中心</a><img src="img/indright.jpg" alt="" /></li>
+					<li><a href="#">购物车</a></li>
+				</ul>
 			</div>
-			<div id="navtwo">
-				<a href="#"></a><img src="img/indright.jpg" alt="" />
-				<a href="#">在线客服</a><img src="img/indright.jpg" alt="" />
-				<a href="#">帮助中心</a><img src="img/indright.jpg" alt="" />
-				<a href="#">购物车</a>
+			<div class="navtwo">
+				<ul>
+					<li><img src="img/log.jpg" style="height: 57px;"/></li>
+					<li><a href="#">官方商城</a></li>
+					<li><a href="#">全部商品</a></li>
+					<li><a href="#">VIVE</a></li>
+					<li><a href="#">配件</a></li>
+					<li><a href="#">官方社区</a></li>
+					<li><a href="#">最新活动</a></li>
+				</ul>
+				<form class="txt" method="get" name="search" action="/cn/search/" id="HtcSearchForm">
+					<input class="submit" type="submit" name="submit" value=""/><input placeholder="搜索" aria-label="搜索" class="query" type="text" maxlength="100" name="q"/>
+				</form>
 			</div>
-			<div id=""></div>
+			<div class="navthree">
+				<ul>
+				    <li><a href="#">首页</a></li>
+					<li><a href="#">手机</a></li>
+					<li><a href="#">配件</a></li>
+					<li><a href="#">U积分兑换</a></li>	
+				</ul>
+			</div>
 		</div>
-		
+	    <!--描述：轮播图-->
+	    <div id="box">
+			<img id="imgId1" src="img/ind1.jpg" />
+			<img id="imgId2" src="img/ind2.jpg" />
+			<img id="imgId3" src="img/ind3.jpg" />
+			<ul id="btns">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		    <div id="leftArrow" style="font-size: 80px;">＜</div>
+	        <div id="rightArrow" style="font-size: 80px;">＞</div>
+        </div>
+	    <!--描述：content-->
+	    <div id="cont">
+	    	<ul>
+		    	<li><a href="#"><img src="img/ind02.jpg" style="width: 572px; height: 572px;"/></a></li>
+		    	<li><a href="#"><img src="img/ind03.jpg" style="width: 572px; height: 572px;"/></a></li>
+	    	</ul>
+	    </div>
 	</body>
 </html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script src="js/index1.js"></script>
+<script type="text/javascript">
+	$(function(){
+    initUl();
+    initEvent();
+    autoPlay();
+    
+});
+</script>
