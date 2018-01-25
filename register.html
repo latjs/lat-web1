@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Expires" content="0">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-control" content="no-cache">
+		<meta http-equiv="Cache" content="no-cache">
+
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+	</head>
+	<body>
+		<div id="content">
+			 <a href="#" class="log"><img src="img/log1.jpg"/></a>
+			  <form>
+		        <div id="form">
+		          
+		          <div id="box">
+		            <input type="text" placeholder="15929875659" id="username"/>
+		            <div id="hint"></div>
+		          </div>
+		          <p class="ts">或用电子邮件方式注册</p>
+		          <div id="box">
+		            <input type="password" placeholder="密码" id="userpass"/>
+		            <div id="hints"></div>
+		          </div>
+		          <div id="box">
+		            <input type="text" placeholder="电子邮件" id="email"/>
+		            <div id="hinttwo"></div>
+		          </div>
+		          
+		          <div class="family">
+			          <input class="familyname" type="text" placeholder="名字" />
+			          <input class="familynames" type="text" placeholder="姓氏" />
+		          </div><br />
+		          
+		          <div id="boxs">
+		          	  <input type = "button" id="verify_text" /> 
+			          <input type="text" placeholder="输入显示的代码" id="verify"/><br />
+			          
+		          </div>
+		           <div id="hintth"></div>
+		           
+		          <div class="gd">告诉我们关于您的更多信息<span id="sex"></span></div>
+		          
+		          <select class="sexall">
+		          		<option value="">性别</option>
+		          		<option value="">男</option>
+		          		<option value="">女</option>
+		          </select>
+		          
+		          <!--<div class="gd">兴趣</div>-->
+		          
+		          <!--<div class="hobbyall">
+		          		<label for="hobby"><input type="checkbox" id="hobby" value="1" style="width：200px; height: 30px;"/>艺术和设计</label>
+		          </div>-->
+		          
+		          <input id="btn" type="button" style="outline: medium;" value="创建账户"/>
+		          <div class="yzzc"></div>
+		          <p class="wjmm">点击“创建”即表示您同意HTC 账户条款与条件并且接受隐私政策。同时，申请本帐号设有年龄限制。了解更多关于年龄限制。如您是符合申请帐号年龄限制之未成年人，请详细阅读使用条款并在父母或监护人的指引下完成注册。</p>
+		          <p class="qqandwb">或</p>
+		          <div class="link">
+		          	  <a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&client_id=100474704&redirect_uri=https://account.htcsrv.cn/VirtualAccount/servlet/qq_request_token&response_type=code&state=24904229968047&scope=get_user_info,add_topic,add_one_blog,add_album,upload_pic,list_album,add_share,check_page_fans,add_t,add_pic_t,del_t,get_repost_list,get_info,get_other_info,get_fanslist,get_idollist,add_idol,del_ido,get_tenpay_addr" target="_blank"><img src="img/log3.jpg"/></a>
+		          	  <a href="https://api.weibo.com/oauth2/authorize?client_id=662468485&redirect_uri=https://account.htcsrv.cn/VirtualAccount/servlet/weibo_request_token&response_type=code" target="_blank"><img src="img/log4.jpg"/></a> 	  
+		          </div><br />
+		          <div  class="zc"><p>已有账户了吗？</p><a href="#">登录</a></div><br />
+		         
+		        </div>
+		      </form>
+
+			 
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+	
+$(function () {
+      // 手机
+      
+    $("#username").blur(function(){
+      var str = $("#username").val();
+      var ret = /^1\d{10}$/;
+      if(ret.test(str)){
+         $('#hint').html('用户名合法');
+         
+      }else{
+         $('#hint').html('用户名不合法');
+      }
+    });
+    
+    // 密码
+    $("#userpass").blur(function(){
+      var str = $("#userpass").val();
+      var ret = /^[a-zA-Z]\w{5,14}$/;
+      if(ret.test(str)){
+         $('#hints').html('密码合法');
+      }else{
+         $('#hints').html('密码不合法');
+      }
+    });
+    
+    // 邮件
+    $("#email").blur(function(){
+      var str = $("#email").val();
+      var ret = /^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$/;
+      if(ret.test(str)){
+        $('#hinttwo').html('邮箱地址合法');
+      }else{
+        $('#hinttwo').html('邮箱地址不合法');
+      }
+    });
+    
+     function change(){
+	    code=$("#verify_text");
+	  // 验证码组成库
+	   var arrays=new Array( 
+	       '1','2','3','4','5','6','7','8','9','0',
+	       'a','b','c','d','e','f','g','h','i','j', 
+	       'k','l','m','n','o','p','q','r','s','t', 
+	       'u','v','w','x','y','z', 
+	       'A','B','C','D','E','F','G','H','I','J', 
+	       'K','L','M','N','O','P','Q','R','S','T', 
+	       'U','V','W','X','Y','Z'        
+	       ); 
+	    codes='';// 重新初始化验证码
+	   for(var i = 0; i<4; i++){
+	   // 随机获取一个数组的下标
+	   var r = parseInt(Math.random()*arrays.length);
+	   codes += arrays[r];
+	  }
+	  // 验证码添加到input里
+	     code.val(codes);
+	  }
+	  change();
+	 code.blur(change);
+	 //单击验证
+	  $("#verify").blur(function(){
+	   var inputCode = $("#verify").val().toUpperCase(); //取得输入的验证码并转化为大写 
+	   console.log(inputCode);
+	  if(inputCode.length == 0) { //若输入的验证码长度为0
+         $('#hintth').html('请输入验证码'); //则弹出请输入验证码
+	     
+	  }    
+	  else if(inputCode!=codes.toUpperCase()) { //若输入的验证码与产生的验证码不一致时
+	     $('#hintth').html('验证码错误'); //则弹出验证码输入错误
+	    
+	    change();//刷新验证码
+	     $("#verify").val("");//清空文本框
+	  }else { //输入正确时
+	     $('#hintth').html('验证码正确');
+	     
+	  } 
+	  });
+	  
+	 
+	    $("#btn").click(function () {
+	        $.ajax({
+	           type:"POST",
+	           url:"regsave.php",
+	           data:{
+	              "username":$("#username").val(),
+	              "userpass":$("#userpass").val()
+	           },
+	            success:function (t) {
+	                if(t=="0"){
+	                    //保存cookie
+	                    $(".yzzc").html("注册成功");
+	                    location.href="login.html";
+	                }else{
+	                    $(".yzzc").html("注册失败，该用户名已经存在！");
+	                    
+	                }
+	            }
+	        });
+	    });
+	
+  });
+</script>

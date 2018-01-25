@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Expires" content="0">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-control" content="no-cache">
+		<meta http-equiv="Cache" content="no-cache">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	</head>
+	<body>
+		<div id="content">
+			 <a href="#" class="log"><img src="img/log1.jpg"/></a>
+			  <form>
+		        <div id="form">
+		          
+		          <div id="box">
+		            <input type="text" placeholder="电子邮件地址或者手机号"  id="username"/>
+		          </div>
+		          <div id="box">
+		            <input type="password" placeholder="密码" id="userpass"/>
+		          </div>
+		          <input id="btn" type="button" style="outline: medium;" value="登录"/>
+		          <div id="hint"></div>
+		          
+		          
+		          <a href="#" class="wjmm">忘记密码了？</a>
+		          <p class="qqandwb">或</p>
+		          <div class="link">
+		          	  <a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&client_id=100474704&redirect_uri=https://account.htcsrv.cn/VirtualAccount/servlet/qq_request_token&response_type=code&state=24904229968047&scope=get_user_info,add_topic,add_one_blog,add_album,upload_pic,list_album,add_share,check_page_fans,add_t,add_pic_t,del_t,get_repost_list,get_info,get_other_info,get_fanslist,get_idollist,add_idol,del_ido,get_tenpay_addr" target="_blank"><img src="img/log3.jpg"/></a>
+		          	  <a href="https://api.weibo.com/oauth2/authorize?client_id=662468485&redirect_uri=https://account.htcsrv.cn/VirtualAccount/servlet/weibo_request_token&response_type=code" target="_blank"><img src="img/log4.jpg"/></a> 	  
+		          </div><br />
+		          <div  class="zc"><p>没有账户吗？</p><a href="register.html">注册</a></div><br />
+		          <p class="foot">一旦登录即表示您同意HTC 账户条款与条件和确认隐私政策。</p>
+		        </div>
+		      </form>
+
+		</div>
+	</body>
+</html>
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+$(function () {
+    $("#btn").click(function () {
+        $.ajax({
+           type:"POST",
+           url:"logincheck02.php",
+           data:{
+              "username":$("#username").val(),
+              "userpass":$("#userpass").val()
+           },
+            success:function (t) {
+                if(t=="1"){
+                    //保存cookie
+                    location.href="index.html";
+                }else{
+                    $("#hint").html("用户名或者密码错误");
+                    $("#hint").show();
+                }
+            }
+        });
+    });
+});
+
+</script>
+	

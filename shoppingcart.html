@@ -6,19 +6,20 @@
 		<meta http-equiv="Pragma" content="no-cache">
 		<meta http-equiv="Cache-control" content="no-cache">
 		<meta http-equiv="Cache" content="no-cache">
+
 		<title></title>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/shoppingcart.css"/>
 	</head>
-	 <link rel="stylesheet" type="text/css" href="css/index.css" />
-	 <link rel="stylesheet" href="css/pageSwitch.css">
 	<body>
-		<!--描述:header nav-->
+      	<!--描述:header nav-->
 		<div id="nav">
 			<div class="navone">
 				<ul>
-					<li><a href="login.html">登录/注册</a><img src="img/indright.jpg" alt="" /></li>
+					<li><a href="#">登录/注册</a><img src="img/indright.jpg" alt="" /></li>
 					<li><a href="#">在线客服</a><img src="img/indright.jpg" alt="" /></li>
 					<li><a href="#">帮助中心</a><img src="img/indright.jpg" alt="" /></li>
-					<li><a href="shoppingcart.html">购物车</a></li>
+					<li><a href="#">购物车</a></li>
 				</ul>
 			</div>
 			<div class="navtwo">
@@ -29,7 +30,7 @@
 					<li><a href="#">VIVE</a></li>
 					<li><a href="#">配件</a></li>
 					<li><a href="#">官方社区</a></li>
-					<li><a href="zxhd.html">最新活动</a></li>
+					<li><a href="#">最新活动</a></li>
 				</ul>
 				<form class="txt">
 					<input class="submit" type="text" style="outline: medium;"/>
@@ -38,93 +39,66 @@
 			</div>
 			<div class="navthree">
 				<ul>
-				    <li><a href="index.html">首页</a></li>
-					<li><a href="phone.html">手机</a></li>
-					<li><a href="accessories.html">配件</a></li>
+				    <li><a href="#">首页</a></li>
+					<li><a href="#">手机</a></li>
+					<li><a href="#">配件</a></li>
 					<li><a href="#">U积分兑换</a></li>	
 				</ul>
 			</div>
 		</div>
-	    <!--描述：轮播图-->
-	    <div id="container">
-			<div class="sections">
-				<div class="section" id="section0"></div>
-				<div class="section" id="section1"></div>
-				<div class="section" id="section2"></div>
-				<div class="section" id="section3"></div>
-			</div>
-		</div>
-	    <!--描述：content-->
-	    <div id="cont">
-	    	<ul>
-		    	<li><a href="#"><img src="img/ind02.jpg" style="width: 572px; height: 572px;"/></a></li>
-		    	<li><a href="#"><img src="img/ind03.jpg" style="width: 572px; height: 572px;"/></a></li>
-	    	</ul>
+        
+        <!--描述：购物车详情-->
+        <div id="content">
+        	 <ul class="cart_top">
+        	 	<li><img src="img/shop2.jpg"/><span>购物车</span></li>
+        	 	<li><img src="img/shop3.jpg"/>支付</li>
+        	 	<li><img src="img/shop4.jpg"/>完成购买</li>
+        	 </ul>
+        	 <div class="message">
+        	 	<div class="message_one"><img src="img/shop5.jpg"/><span>确认收货人信息</span></div>
+        	 	<div class="message_two"><input type="radio" class="dz" />&nbsp;&nbsp;新增地址：	</div>
+        	 	<div class="message_one"><img src="img/shop6.jpg"/><span>确认你的收货日期</span></div>
+        	 	<div class="message_three">
+        	 		<input type="radio" name="sh" class="dz" />&nbsp;&nbsp;只工作日送货（双休日、假日不用送）
+        	 		<input type="radio" name="sh" class="dz" checked="checked"/>&nbsp;&nbsp;工作日、双休日、假日均可送货
+        	 		<input type="radio" name="sh" class="dz" />&nbsp;&nbsp;只双休日、假日送货（工作日不送）
+        	 		<input type="radio" name="sh" class="dz" />&nbsp;&nbsp;指定日期送货<span>（仅限上海、北京、深圳）</span>
+        	 		
+        	 	</div>
+        	 	<div class="message_one"><img src="img/shop7.jpg"/><span>确认发票类型</span></div>
+        	 	<div class="message_four">
+        	 		<ul>
+        	 			<li><span class="left">发票信息：<input type="checkbox" checked="checked"/> 我要发票</span><span class="right">发票类型：<input type="radio" name="fp" checked="checked"/>个人<input type="radio" name="fp" />单位</span></li>
+        	 			<li>发票抬头：<input type="text" /><span class="fptt">（发票抬头不能为空，个人发票请填写全名，单位请填写全称）</span></li>
+        	 			<li>备注说明 :发票内容统一为"电子产品"，发票金额以实际支付金额为准。</li>
+        	 			<li><span class="ddly">订单留言：</span><textarea name="" id="" cols="110" rows="10"></textarea></li>
+        	 		</ul>
+        	 	</div>
+        	 </div>
+        	 <div class="qrbt"><img src="img/shop8.jpg"/><span>确认订单商品及优惠券</span></div>
+        	 <div class="shopname">
+        	 	<span style="margin-left: 190px;">商品名称</span>
+        	 	<span style="margin-left: 268px;">购买价</span>
+        	 	<span style="margin-left: 97px;">优惠</span>
+        	 	<span style="margin-left: 58px;">库存</span>
+        	 	<span style="margin-left: 70px;">数量</span>
+        	 	<span style="margin-left: 70px;">小计</span>
+        	 	<span style="margin-left: 58px;">操作</span>
+        	 </div>
+        	 <div class="section">
+        	 	空购物车
+        	 </div>
+        	 <ul class="totalall">
+        	 	<li>商品件数：<span class="shopNum"></span></li>
+        	 	<li>订单总计：<span class="indent"></span></li>
+        	 	<li>优惠总计：<span class="discounts"></span></li>
+        	 	<li>总计：<span class="total"></span></li>
+        	 </ul>
+        	 <div class="continue"><a href="#">继续购物</a></div>
 	    </div>
-	    <!--描述：商品列表-->
-	    <div id="commodity">
-	       <div class="comone">
-	           <p>诚意单品</p>
-	           <div class="cydp">
-	           	   <a href="#" class="cy">
-	               <a href="#"><img src="img/ind04.png"></a><br/>
-	               <a href="#" class="tit">HTC U Ultra 双屏全网通</a><br/>
-	               <a href="#" class="money">￥2,299.00</a><br/>
-	               <div class="buttons">
-	                   <a href="#" class="zp">赠品</a>
-	                   <a href="#" class="jgj">加价购</a>
-	               </div>
-	           	   </a>
-	           </div>
-	           <div class="cydp">
-	               <a href="#"><img src="img/ind05.png"></a><br/>
-	               <a href="#" class="tit">USB-C转3.5mm 耳机音源转接线</a><br/>
-	               <a href="#" class="money">￥149.00</a><br/>
-	               <div class="buttons">
-	                   <a href="#" class="xdlj">下单立减50</a>
-	               </div>
-	           </div>
-	           <div class="cydp">
-	               <a href="#"><img src="img/ind06.png"></a><br/>
-	               <a href="#" class="tit">HTC QC3.0快充移动电源</a><br/>
-	               <a href="#" class="money">￥499.00</a><br/>
-	               <div class="buttons">
-	                   <a href="#" class="xdlj">下单立减50</a>
-	               </div>
-	           </div>
-	           <div class="cydp">
-	               <a href="#"><img src="img/ind07.png"></a><br/>
-	               <a href="#" class="tit">Type-C数据线</a><br/>
-	               <a href="#" class="money">￥69.00</a>
-	           </div>
-	       </div>
-           <div class="comone">
-	           <p>悦耳优选</p>
-	           <div class="cydp">
-	               <a href="#"><img src="img/ind08.png"></a><br/>
-	               <a href="#" class="tit">MAX500双驱动环绕音效耳机</a><br/>
-	               <a href="#" class="moneys">￥249.00</a><span>￥599</span><br/>
-	               <!--<div class="buttons">
-	                   <a href="#" class="xdlj">下单立减50</a>
-	               </div>-->
-	           </div>
-	           <div class="cydp">
-	               <a href="#"><img src="img/ind09.png"></a><br/>
-	               <a href="#" class="tit">JBL专业级运动降噪耳机</a><br/>
-	               <a href="#" class="moneys">￥599.00</a><span>￥1499</span>
-	           </div>
-	           <div class="cydp">
-	               <a href="#"><img src="img/ind10.png"></a><br/>
-	               <a href="#" class="tit">iSport Achieve爱运动入耳式蓝牙</a><br/>
-	               <a href="#" class="money">￥499.00</a>
-	           </div>
-	           <div class="cydp">
-	               <a href="#"><img src="img/ind11.png"></a><br/>
-	               <a href="#" class="tit">iSport爱运动入耳式蓝牙</a><br/>
-	               <a href="#" class="money">￥799.00</a>
-	           </div>
-	       </div>
-	    </div>
+        
+  
+  
 	    <!--描述：广告    -->
 	    <div id="advertising">
 	           <p>*以上展示内容为广告</p>
@@ -147,7 +121,7 @@
 	    </div>
 	    <!--描述： footer--> 
 	    <div id="footer">
-	    	 <div class="tech take">
+	    	 <div class="tech">
 	            <h3 class="f_tit">购物指南</h3>
 	            <div class="foot_con">
 	                <ul class="f_ul">
@@ -349,55 +323,21 @@
                     </div>
                 </div>
             </div>
-       </div>              
+  </div>              
        
-        
+</body>
 
-
-	</body>
-	
 </html>
 
-<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
 
-<script src="js/pageSwitch.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+
+
 <script type="text/javascript">
-
-
-$("#container").PageSwitch({
-		direction:'horizontal',
-		easing:'ease-in',
-		duration:1000,
-		autoPlay:true,
-		loop:'false'
-	});
-   
-   
-    $(".cydp").mouseenter(function (){
-        var index = $(".cydp").index(this);
-        
-        $(this).css({"border-top":"6px solid #a5cf4c","box-shadow":"0px 0px  10px 5px #aaa" }); 
-        $(".cydp").eq().css({"border-top":"6px solid #a5cf4c","box-shadow":"0px 0px  10px 5px #aaa"});
-    });
-       
-    $(".cydp").mouseout(function (){
-        var index = $(".cydp").index(this);
-        $(this).css({"border-top":"none","box-shadow":"none"}); 
-        $(".cydp").eq().css({"border-top":"none","box-shadow":"none"});
-    });
     
     $("#event").click(function(){
-  	<!--$("#clickall").css({"display":"block"});-->
 		$("#clickall").slideToggle();
     });
-    
-    
-//   $('#nav').bind('mousemove',function(){
-//      if(scrollTop>140){
-//          $('this').css('display','block');
-//          $('this').animate({top:0})
-//       }
-//  });
-
-    
+ 
+ 
 </script> 
