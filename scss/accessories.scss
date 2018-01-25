@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+$baseFontSize:14px;
+$bgcolor:pink;
+$width:100%;
+$color:#a5cf4c;
+
+body,div,p,ul,ol,li,dl,dt,dd,table,tr,td,th,form,h1,h2,h3,h4,h5,h6,fieldset,figure,hr,img,input{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: "微软雅黑",Arial;
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+img{
+    border: none;
+}
+
+//商品列表
+.comone{
+        width: $width;
+        height:935px;
+        background: #f4f4f4;
+        .com{
+            padding:10px 0 0 55px;
+        
+           .cydp{
+            width: 270px;
+            height: 430px;
+            background: white;
+            font-size: 16px;
+            margin: 10px 5px;
+            float: left;
+             
+                 a img{
+                height: 242px;
+                width: 218px;
+                padding: 22px 22px 0;
+                }
+                
+                .tit{
+                color:#333333;
+                text-align: center;
+                line-height: 7px;
+                }
+                .money{
+                color:#333333;
+                width: 270px;
+                height: 30px;
+                text-align: center;
+                line-height: 20px;
+                font-weight: 1000;
+                padding: 35px 0 0 0;
+                margin-left: 70px;
+                clear: both;
+                    .sone{
+                        color:#333333;
+                        text-align: center;
+                        line-height: 20px;
+                        font-weight: 1000;
+                        //padding: 35px 0 0 0;
+                        float: left;
+                        display: inline-block;
+                        width: 120px;
+                    }
+                    
+                     .stwo{
+                        color: #a3a3a3;
+                        text-decoration: line-through;
+                        float: left;
+//                      padding-top: 35px;
+//                      padding-left: 10px;
+                        display: inline-block;
+                        width: 30px;
+                    }
+                }
+                .moneys{
+                color:#333333;
+                width: 270px;
+                text-align: center;
+                line-height: 20px;
+                font-weight: 1000;
+                padding-top: 35px;
+                padding-left: px;
+                float: left;
+                
+                }
+                
+                .buttons{
+                text-align: center;
+                line-height: 20px;
+                float: left;
+                padding-left: 80px;
+                
+                    a{
+                       float: left;
+                       margin: 0 3px;
+                       padding: 0 7px;
+        
+                   }
+                   .zp{
+                        color:#fff;
+                        font-size: $baseFontSize;
+                        text-align: center;
+                        line-height: 20px;
+                        background: #eb7566;
+                        
+                      }
+                  .jgj{
+                        color:#fff;
+                        font-size: $baseFontSize;
+                        text-align: center;
+                        line-height: 20px;
+                        background: #01c6b8;
+                    } 
+                  .xdlj{
+                        color:#fff;
+                        font-size: $baseFontSize;
+                        text-align: center;
+                        line-height: 20px;
+                        background: #005ba4;
+                        margin-left:10px ;
+                    }      
+             }
+          }
+       }
+}

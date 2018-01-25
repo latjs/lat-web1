@@ -1,0 +1,256 @@
+@charset "utf-8";
+
+$baseFontSize:14px;
+$bgcolor:pink;
+$width:100%;
+$color:#a5cf4c;
+
+body,div,p,ul,ol,li,dl,dt,dd,table,tr,td,th,form,h1,h2,h3,h4,h5,h6,fieldset,figure,hr,img,input{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: "微软雅黑",Arial;
+    background: #f4f6f8;
+    
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+img{
+    border: none;
+}
+
+#content{
+    width: 488px;
+    height: 1078px;
+    margin: auto;
+    
+    .log{
+        margin:55px 0 25px 60px;
+    }
+    #form{
+        
+        #box{
+            
+            
+            input{
+                height: 48px;
+                width: 426px;
+                border: 1px solid #b6c1d3;
+                font-size: 16px;
+//              color: #e2e2ee;
+                text-indent: 20px;
+                margin:0 0 10px 27px;
+            }
+            
+            #hint{
+                line-height: 35px;
+                font-size: 16px;
+                color: #FFFFFF;
+                margin-left: 27px;
+            }   
+            #hints{
+                line-height: 35px;
+                font-size: 16px;
+                color: #FFFFFF;
+                margin-left: 27px;
+            } 
+            #hinttwo{
+                line-height: 35px;
+                font-size: 16px;
+                color: #FFFFFF;
+                margin-left: 27px;
+            } 
+           
+        }
+        .family{
+            width: 426px;
+            margin:0 0 10px 27px;
+            input{
+                height: 48px;
+                width: 206px;
+                border: 1px solid #b6c1d3;
+                font-size: 16px;
+                //color: #e2e2ee;
+                text-indent: 20px;
+                margin-right: 10px;
+                
+            }
+            .familyname{
+                float: left;
+            }
+            .familynames{
+                float: left;
+                margin-right: 0;
+            }
+        }
+        #boxs{
+              width: 426px;
+              margin-left: 27px;
+                #verify_text{
+                    
+                    height: 50px;
+                    width: 206px;
+                    border: 1px solid #b6c1d3;
+                    font-size: 16px;
+                    //color: #e2e2ee;
+                    text-align: center;
+                    //text-indent: 20px;
+                    background-color: #fff;
+                    font-size: 26px;
+                    font-weight: 1000;
+                    float: left;
+                    margin:10px 10px 0 0;
+                    
+                }
+                #verify{
+                    height: 48px;
+                    width: 206px;
+                    border: 1px solid #b6c1d3;
+                    font-size: 16px;
+                    //color: #e2e2ee;
+                    text-indent: 20px;
+                    margin-top: 10px;
+                    float: left;
+                }
+        }
+         #hintth{
+                
+                text-align: right;
+                line-height: 35px;
+                font-size: 16px;
+                color: #FFFFFF;
+                margin-right: 37px;
+                clear: both;
+            }  
+ 
+        .ts{
+                text-align: right;
+                width:426px ;
+                margin-left: 27px;
+                height: 25px;
+                font-size: 14px;
+                color: #798496;
+            }
+        .gd{
+            font-size: 14px;
+            color: #798496;
+            width:426px ;
+            margin-left: 27px;
+            height: 30px;
+            line-height: 30px;
+            text-align: left;
+            clear: both;
+        }    
+        
+        .yzzc{
+            font-size: 16px;
+            color: pink;
+            width:426px ;
+            margin-left: 27px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            clear: both;
+        }
+          
+        #hobbyall{
+                border: 1px solid #8694ac;
+                border-radius: 2rem;
+                color: #fff;
+                font-size: 14px;
+                font-weight: 400;
+                text-align: center;
+                #hobby{
+                    width:0;
+                    height: 0;
+                    display: inline-block;
+                        color: initial;
+                    letter-spacing: normal;
+                    word-spacing: normal;
+                    text-transform: none;
+                    text-indent: 0px;
+                    text-shadow: none;
+                        text-align: start;
+//                      display: none;
+                       opacity: 0;
+                }
+                
+        }  
+            
+        #btn{
+            width: 426px;
+            height: 44px;
+            background: #8694ac;
+            line-height: 38px;
+            text-align: center;
+            font-size: 16px;
+            color: #FFFFFF;
+            border-radius: 50px;
+            border:1px solid #848282;
+            cursor: pointer;
+            margin: 10px 0 10px 27px;
+        }
+        
+        .sexall{
+                height: 48px;
+                width: 426px;
+                border: 1px solid #b6c1d3;
+                font-size: 16px;
+                color: #e2e2ee;
+                text-indent: 20px;
+                margin:0 0 10px 27px;
+           
+        }
+        .wjmm{
+            color: #798496;
+            width: 426px;
+            margin-left:27px;
+            line-height: 30px;
+            text-align: center;
+            font-size: 12px;
+            
+        }
+        .qqandwb{
+            width: 461px;
+            height: 30px;
+            margin-left: 25px;
+            text-align: center;
+            text-indent: -1.5em;
+            line-height: 30px;
+            color: #798496;
+            background: url(../img/log2.jpg) no-repeat;
+        }
+        .link{
+            margin-left:27px;
+            width: 461px;
+            height: 70px;
+            a{
+                float: left;
+            }
+        }
+        .zc{
+            width: 308px;
+            text-align: center;
+            height: 15px;
+            font-size: 14px;
+            color: #798496;
+            margin-left:180px ;
+            p{
+                float: left;
+            }
+            a{
+                float: left;
+                color:#798496;
+                font-weight: 1000;
+            }
+        }
+       
+    }
+}

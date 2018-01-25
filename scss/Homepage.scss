@@ -1,0 +1,214 @@
+//描述：轮播图-->
+ #container {
+            width: 1244px;
+            height: 500px;
+            overflow: hidden;
+            margin-left: 10px;
+            .sections {
+                height:100%;
+                position: relative;
+                
+                   .section {
+                    background-color: #000;
+                    background-size: cover;
+                    background-position: 50% 50%;
+                    text-align: center;
+                    height:100%;
+                    color: white;
+                    }
+                    #section0 {
+                            background-image: url('../img/1.jpg');
+                        }
+                    #section1 {
+                            background-image: url('../img/2.jpg');
+                    }
+                    #section2 {
+                            background-image: url('../img/3.jpg');
+                    }
+                    #section3 {
+                            background-image: url('../img/4.jpg');
+                    }
+     
+            }
+    }
+    
+ #cons{
+     width: 100%;
+     height: 270px;
+     
+     #con{
+         margin: 10px 0 0 11px;
+         width: 408px;
+         height: 250px;
+         float: left;
+         
+         img{
+           width: 403px;
+           height: 250px;
+         }
+         
+         a:hover{
+             opacity: .8;
+         }
+     }
+ }
+ 
+// <!--描述：质感一握，耳目一新-->
+#newcont{
+    width: 1244px;
+    height: 650px;;
+    background: #dadada;
+    margin-left: 10px;
+    h1{
+        text-align: center;
+        height: 120px;
+        line-height: 120px;
+        font-size: 34px;    
+    }
+    #ncont{
+        width: 1010px;
+        height: 398px;
+        margin-left: 110px;
+       a{
+           margin: 5px;
+           width: 326px;
+           height: 185px;
+           position: relative;
+           float: left; 
+           
+           img{
+               width: 326px;
+               height: 185px;
+               opacity: .8;
+            }
+           span img{
+               width: 44px;
+               height: 44px;
+               position: absolute;
+               left:42%;
+               top: 40%;
+           }
+        }
+        :hover{
+            opacity: 1;
+        }
+    }
+    .bot{
+        margin: 24px 0 0 540px;
+        font-weight: 1000;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+        width: 114px;
+        border: 2px solid #000;
+       
+        a{
+          color:#000;
+          font-size: 12px;  
+        }
+        :hover{
+        background: #000;
+        color: #fff;
+       }
+    }
+    
+}
+
+// <!--描述：马上购买-->
+#purchase{
+    width: 1244px;
+    height: 540px;
+    background: #bbc5ac;
+    margin: 10px 0 0 10px;
+    clear: both;
+    h1{
+        height: 140px;
+        text-align: center;
+        line-height: 140px;
+        font-size: 34px;
+    }
+    
+    .phoneall{
+        width: 1212px;
+        height: 322px;
+        margin-left: 16px;
+        
+        .phone{
+            width: 202px;
+            height: 322px;
+            float: left;
+            
+            a img{
+                width: 95px;
+                height: 192px;
+                margin-left: 53px;
+//              background: url(../img/new16.png) no-repeat;
+//              background-size: 95px;
+            }
+            .names{
+                line-height: 60px;
+                color: #333333;
+                font-size: 14px;
+                font-weight: 1000px;
+                text-align: center;
+                
+            }
+           .nameone{
+                color: #333333;
+                font-size: 12px;
+                text-align: center;
+           }
+           .nametwo{
+                color: #333333;
+                font-size: 12px;
+                text-align: center;
+                font-weight: 1000px;
+                
+           }
+            .bon{
+                margin-left: 40px;
+                font-weight: 1000;
+                height: 38px;
+                line-height: 38px;
+                text-align: center;
+                width: 114px;
+                border: 2px solid #333333;
+               
+                a{
+                  color:#333333;
+                  font-size: 12px;  
+                }
+                :hover{
+                background: #333333;
+                color: #fff;
+               }
+            }
+        }
+    }
+     .btn{
+        margin-left:  540px;
+        font-weight: 1000;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+        width: 158px;
+        border: 2px solid #333333;
+       
+         a{
+          color:#333333;
+          font-size: 12px;  
+        }
+        :hover{
+            background: #333333;
+            color: #fff;
+       }
+    }
+    
+}
+#eventone{
+    width: 1244px;
+    height: 27px;
+    background: url(../img/toggle.jpg) no-repeat;
+    margin-left: 10px;
+    clear: both;
+}
